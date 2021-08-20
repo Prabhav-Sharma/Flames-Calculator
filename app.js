@@ -4,6 +4,7 @@ function addElement(name) {
 
 var btn = addElement("#btn-go");
 var returnStat = addElement("#return-stat");
+var flames = addElement("#flames");
 
 btn.addEventListener("click", function clickHandler() {
 
@@ -19,21 +20,27 @@ btn.addEventListener("click", function clickHandler() {
 
         case 6:
             returnStat.innerHTML = "<span class='character'>S</span>iblings👯‍♀️";
+            flames.innerHTML="Flame<span class='character'>s</span><span class='emoji'>🔥</span>"
             break;
         case 5:
          returnStat.innerHTML ="<span class='character'>E</span>nemies🗡️";
+         flames.innerHTML="Flam<span class='character'>e</span>s<span class='emoji'>🔥</span>"
          break;
          case 4:
             returnStat.innerHTML ="<span class='character'>M</span>arried 💍";
+            flames.innerHTML="Fla<span class='character'>m</span>es<span class='emoji'>🔥</span>"
          break;
          case 3:
             returnStat.innerHTML ="<span class='character'>A</span>ffair🙈";
+            flames.innerHTML="Fl<span class='character'>a</span>mes<span class='emoji'>🔥</span>"
          break;
          case 2:
             returnStat.innerHTML ="<span class='character'>L</span>overs❤️";
+            flames.innerHTML="F<span class='character'>l</span>ames<span class='emoji'>🔥</span>"
          break;
          case 1:
             returnStat.innerHTML ="<span class='character'>F</span>riends🤝";
+            flames.innerHTML="<span class='character'>F</span>lames<span class='emoji'>🔥</span>"
          break;
     
 
@@ -92,5 +99,6 @@ function removeCommonLetters(name1, name2) {
         counter++;
     }
     var concatString = arrayName1.concat(arrayName2);
+    console.log(concatString);
     return concatString.length;
 }
