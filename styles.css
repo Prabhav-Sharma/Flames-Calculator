@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+body{
+    font-family: 'Flamenco', cursive;
+    text-align: center;
+    font-size: larger;
+    background-color: #BAE6FD    ;
+}
+
+h1{
+    font-size: 72pt;
+}
+
+input{
+    display: block;
+    margin: auto;
+    margin-top: 0.6rem;
+    font-family: 'Flamenco', cursive;
+    font-size: larger;
+    text-align: center;
+    box-shadow: 3px 3px black;
+    padding: 0.6rem;
+
+}
+
+#return-stat{
+    font-size: 40pt;
+}
+
+button{
+    margin: 1rem;
+    margin-top: 3rem;
+    font-family: 'Flamenco', cursive;
+    font-size: xx-large;
+    width:8%;
+    border-radius: 12%;
+    padding: 5px;
+    font-weight: bolder;
+    background-color: white;
+
+}
+
+button:hover{
+    background-color:#BAE6FD;
+    color: green;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px black;
+}
+
+.character{
+    color: red;
+}
+
+.emoji{
+    font-size: 48pt;
+}
+
+.refer-links{
+    height: 50px;
+    width: 75px;
+}
+
+  aside{
+    width: min-content; 
+    height:fit-content; 
+    background: white;
+     float:left;
+     display: block;
+     margin:auto;
+  margin-top: 25vh;
+  margin-left: -10px;
+  opacity: 80%;
+  }
+
+  .linkedIN{
+      width: 75px;
+      height:60px;
+  }
+
+  section{
+      margin-right: 7rem;
+  }
