@@ -12,7 +12,6 @@ addElement("btn-go").addEventListener("click", function () {
     if (inputOne !== "" && inputTwo !== "") { //check to make sure, names have been entered
         getResult(inputOne, inputTwo);
     } else returnStat.innerText = "I'm gonna need those name thingies xD"; //informing that one of the names is a blank value
-
 })
 
 function getResult(name1, name2) {
