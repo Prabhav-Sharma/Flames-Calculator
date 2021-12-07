@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
 
-body{
+body {
     font-family: 'Flamenco', cursive;
     text-align: center;
     font-size: larger;
-    background-color: #BAE6FD    ;
+    background-color: #BAE6FD;
 }
 
-h1{
+h1 {
     font-size: 72pt;
 }
 
-
-
-input{
+input {
     display: block;
     margin: auto;
     margin-top: 0.6rem;
@@ -22,19 +20,18 @@ input{
     text-align: center;
     box-shadow: 3px 3px black;
     padding: 0.6rem;
-
 }
 
-#return-stat{
+#return-stat {
     font-size: 40pt;
 }
 
-button{
+button {
     margin: 1rem;
     margin-top: 3rem;
     font-family: 'Flamenco', cursive;
     font-size: xx-large;
-    width:8%;
+    width: 8%;
     border-radius: 12%;
     padding: 5px;
     font-weight: bolder;
@@ -42,55 +39,76 @@ button{
 
 }
 
-button:hover{
-    background-color:#BAE6FD;
+button:hover {
+    background-color: #BAE6FD;
     color: green;
     cursor: pointer;
     box-shadow: 2px 2px 2px black;
 }
 
-.character{
+.character {
     color: red;
 }
 
-.emoji{
+.emoji {
     font-size: 48pt;
 }
 
-.refer-links{
+.refer-links {
     height: 50px;
     width: 75px;
 }
 
-.refer-links:hover{
+#ref-github:hover {
     width: 108%;
-    background-color: #22C55E;
+    background-color: #A020F0;
     border-radius: 2px;
-    /* height: 110%; */
 }
 
-  aside{
-    width: min-content; 
-    height:fit-content; 
+#ref-instagram:hover {
+    width: 108%;
+    background-color: #cd486b;
+    border-radius: 2px;
+}
+
+#ref-linkedin:hover {
+    width: 108%;
+    background-color: #8AC7DB;
+    border-radius: 2px;
+}
+
+#ref-portfolio:hover {
+    width: 108%;
+    background-color: #FCA5A5;
+    border-radius: 2px;
+}
+
+aside {
+    width: min-content;
+    height: fit-content;
     background: white;
-     float:left;
-     display: block;
-     margin:auto;
-  margin-top: 25vh;
-  margin-left: -10px;
-  opacity: 80%;
-  }
+    float: left;
+    display: block;
+    margin: auto;
+    margin-top: 25vh;
+    margin-left: -10px;
+    opacity: 80%;
+}
 
-  .linkedIN{
-      width: 75px;
-      height:60px;
-  }
+.linkedIN {
+    width: 75px;
+    height: 60px;
+}
 
-  section{
-      margin-right: 4rem;
-  }
+section {
+    margin-right: 4rem;
+}
 
-  #return-stat{
-      text-align: center;
-      margin-left: 4rem;
-  }
+#return-stat {
+    text-align: center;
+    margin-left: 4rem;
+}
+
+aside {
+    height: 226px;
+}
