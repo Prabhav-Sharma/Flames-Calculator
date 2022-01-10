@@ -1,12 +1,10 @@
-//Function to fetch elements present in the document
-function addElement(id) {
-    return document.getElementById(id);
-}
+//ES6 Version Code
+const addElement = id => document.getElementById(id);
 
 let flames = addElement("flames");
 let returnStat = addElement("return-stat");
 
-addElement("btn-go").addEventListener("click", function () {
+addElement("btn-go").addEventListener("click",()=> {
     let inputOne = String(addElement("name-first").value.trim()); //converting the input to avoid type coercion
     let inputTwo = String(addElement("name-second").value.trim());
     if (inputOne !== "" && inputTwo !== "") { //check to make sure, names have been entered
@@ -14,7 +12,7 @@ addElement("btn-go").addEventListener("click", function () {
     } else returnStat.innerText = "I'm gonna need those name thingies xD"; //informing that one of the names is a blank value
 })
 
-function getResult(name1, name2) {
+const getResult= (name1, name2)=> {
     let result = playFlames(name1, name2);
     //updating UI here.
     switch (result) {
@@ -45,7 +43,7 @@ function getResult(name1, name2) {
     }
 }
 
-function playFlames(name1, name2) {
+const playFlames= (name1, name2) => {
     let uniqueChars = removeCommonCharacters(name1, name2);
     let count = uniqueChars.length;
     if (count === 0) return 1;
@@ -58,7 +56,7 @@ function playFlames(name1, name2) {
 }
 /*An abstract funtion that removes all characters, this can be used for any purpose. It returns an array of all the values that were uncommon
  between the two strings*/
-function removeCommonCharacters(str1, str2) {
+const removeCommonCharacters=(str1, str2) => {
     let str1Array = str1.toLowerCase().split("");
     let str2Array = str2.toLowerCase().split("");
     let commonChars = [];
